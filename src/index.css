@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,27 +25,50 @@
     background: #555;
   } */
 
+  .progress-bar {
+    @apply fixed top-0 left-0 right-0 h-2 bg-btn origin-left z-50;
+  }
+
   .c-container {
     @apply min-h-[100svh] px-4;
   }
 
-  img{
-    @apply w-full h-full block
+  img {
+    @apply w-full h-full block;
   }
 
   .card-container:hover {
     transition: 0.3s ease-in-out;
     box-shadow: 0 4px 6px 4px rgb(243, 248, 254);
   }
- .button-filled {
-    @apply text-sm font-medium bg-btn text-white py-4 px-7 rounded-full cursor-pointer duration-200 hover:bg-transparent hover:text-btn hover:ring-2 hover:ring-inset hover:ring-btn;
+  .button-filled {
+    @apply text-sm font-medium bg-btn text-white py-3.5 px-6 rounded-full cursor-pointer duration-200 hover:bg-white hover:text-btn hover:ring-2 hover:ring-inset hover:ring-btn;
   }
 
-  .button-outlined{
-    @apply text-sm font-medium bg-none border-white border-2 text-white py-4 px-7 rounded-full cursor-pointer duration-200  hover:bg-btn hover:border-btn  
-  } 
-
-  .form-container{
-    @apply flex flex-col gap-1
+  .button-outlined {
+    @apply text-sm font-medium bg-none border-white border-2 text-white py-3.5 px-6 rounded-full cursor-pointer duration-200  hover:bg-btn hover:border-btn;
   }
+
+  .form-container {
+    @apply flex flex-col gap-1;
+  }
+  .form-container label {
+    @apply font-medium text-bg-icon text-[17px];
+  }
+
+  .form-container input,
+  textarea {
+    @apply border bg-gray-200 border-bg-blues py-2 px-3 duration-300 focus:border-none focus:outline-1 focus:outline-bg-icon rounded-sm;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-slate-400 font-light text-sm;
+  }
+
+  .form-container textarea {
+    @apply resize-y min-h-32;
+  }
+
+
 }

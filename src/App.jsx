@@ -1,11 +1,17 @@
-import HomeScreen from "./pages/HomeScreen"
+import { SnackbarProvider } from "notistack";
+import HomeScreen from "./pages/HomeScreen";
 
 function App() {
   return (
     <>
-      <HomeScreen />
+      <SnackbarProvider
+        maxSnack={1}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <HomeScreen />
+      </SnackbarProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

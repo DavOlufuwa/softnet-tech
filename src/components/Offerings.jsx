@@ -32,7 +32,7 @@ const Offerings = () => {
           ))}
         </p>
       </div>
-      <div>
+      <div id="services">
         <h2 className="text-center font-bold">Services we provide</h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {information.map((info) => (

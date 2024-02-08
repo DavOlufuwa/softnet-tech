@@ -31,13 +31,13 @@ const Navigation = () => {
         >
           <ul className="flex flex-col gap-8 md:flex-row md:items-center md:gap-[4vw]">
             <li>
-              <a href="#">Services</a>
+              <a href="#services" className="nav-link" onClick={closeMenu}>Services</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#footer" className="nav-link" onClick={closeMenu}>Contact</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#" className="nav-link" onClick={closeMenu}>About</a>
             </li>
           </ul>
         </div>
