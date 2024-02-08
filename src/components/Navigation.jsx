@@ -19,14 +19,14 @@ const Navigation = () => {
   };
 
   return (
-    <header className="pb-3 md:py-3 pt-4">
-      <nav className="flex justify-between items-center w-[92%] mx-auto">
+    <header className="pb-3 md:py-3 pt-4 bg-bg-blues">
+      <nav className="flex justify-between items-center w-[92%] mx-auto ">
         <div className="z-50">
           <h1>LOGO HERE</h1>
         </div>
         <div
           className={`nav-link-container duration-300 absolute min-h-screen left-0 top-[-100%] w-full flex items-center px-16 md:px-5 md:static md:min-h-max md:w-auto ${
-            menuOpen && "top-[0%] z-40 intended-background-color"
+            menuOpen && "top-[0%] z-40 bg-bg-blues"
           }`}
         >
           <ul className="flex flex-col gap-8 md:flex-row md:items-center md:gap-[4vw]">
@@ -46,9 +46,11 @@ const Navigation = () => {
             <button className="button-filled">Get Started</button>
           </a>
           <div className="cursor-pointer h-10 md:hidden z-50">
-            {
-              menuOpen ? <img src={Close} alt="close menu button" onClick={closeMenu} /> : <img src={Menu} alt="hamburger menu button" onClick={openMenu} />
-            }
+            {menuOpen ? (
+              <img src={Close} alt="close menu button" onClick={closeMenu} />
+            ) : (
+              <img src={Menu} alt="hamburger menu button" onClick={openMenu} />
+            )}
           </div>
         </div>
       </nav>

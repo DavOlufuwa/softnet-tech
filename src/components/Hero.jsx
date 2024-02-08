@@ -3,7 +3,7 @@ import HeroImage from '/hero-img.svg'
 
 const Hero = () => {
   return (
-    <div className='c-container bg-blues flex flex-col items-center'>
+    <div className='c-container bg-bg-blues flex flex-col items-center'>
       <div className='pt-5 text-center'>
         <h1 className='text-4xl font-extrabold leading-[50px] mb-3'>
           Want anything to be easy with <span className='text-t-blue font-black'>SoftNet</span> Technologies
