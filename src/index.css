@@ -29,8 +29,12 @@
     @apply fixed top-0 left-0 right-0 h-2 bg-btn origin-left z-50;
   }
 
+  .nav-link {
+    @apply font-medium text-gray-500 text-lg cursor-pointer duration-200  hover:text-btn;
+  }
+
   .c-container {
-    @apply min-h-[100svh] px-4;
+    @apply min-h-[100svh] px-6 md:min-h-[90svh] lg:px-32 xl:px-40;
   }
 
   img {

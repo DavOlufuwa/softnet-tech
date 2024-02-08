@@ -5,35 +5,38 @@ import Correct from "/correct.svg";
 
 const Offerings = () => {
   return (
-    <div className="c-container mb-20">
-      <div>
+    <div className="c-container mb-40">
+      <div className="flex flex-col-reverse py-12 mb-12 md:flex-row md:gap-10 items-center ">
         <img
           src={HeroImage}
           alt="an hero image showing a computer with a set of books and certificates"
           className="min-w-[350px] "
         />
+        <div>
+          <h2 className="text-4xl font-bold mb-4 md:mb-6 md:text-[2.35rem]  xl:text-5xl xl:leading-[60px]">
+            We Provide Many <span className="text-btn">Features</span> You Can
+            Use
+          </h2>
+          <p className=" text-[15px] text-gray-700 mb-5">
+            You can explore the features that we provide with fun and have their
+            own functions for each feature
+          </p>
+          <p className="flex flex-col text-[15px] gap-5 text-gray-700 ">
+            {outline.map((outline) => (
+              <article key={outline.id} className="flex gap-3 items-center">
+                <div className="bg-t-blue rounded-full p-1">
+                  <img src={Correct} alt="correct icon" className="w-3" />
+                </div>
+                <p>{outline.point}</p>
+              </article>
+            ))}
+          </p>
+        </div>
       </div>
-      <div>
-        <h2>
-          We Provide Many <span>Features</span> You Can Use
+      <div id="services" className="">
+        <h2 className="capitalize text-4xl text-center font-bold my-10">
+          Services we provide
         </h2>
-        <p>
-          You can explore the features that we provide with fun and have thier
-          own functions for each feature
-        </p>
-        <p>
-          {outline.map((outline) => (
-            <article key={outline.id} className="flex gap-3 items-center">
-              <div className="bg-t-blue rounded-full p-1">
-                <img src={Correct} alt="correct icon" className="w-3" />
-              </div>
-              <p>{outline.point}</p>
-            </article>
-          ))}
-        </p>
-      </div>
-      <div id="services">
-        <h2 className="text-center font-bold">Services we provide</h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {information.map((info) => (
             <div
@@ -43,9 +46,9 @@ const Offerings = () => {
               <div className="bg-bg-icon max-w-max p-3 rounded-full">
                 <img src={info.img} className="w-6" alt="card image" />
               </div>
-              <div className="flex flex-col gap-1 items-center">
+              <div className="flex flex-col gap-3 items-center">
                 <h3 className="text-t-blue">{info.topic}</h3>
-                <p className="text-t-gray text-center">{info.content}</p>
+                <p className="text-t-gray text-center text-sm">{info.content}</p>
               </div>
             </div>
           ))}
