@@ -37,7 +37,7 @@ const Navigation = () => {
               <a href="#footer" className="nav-link" onClick={closeMenu}>Contact</a>
             </li>
             <li>
-              <a href="#" className="nav-link" onClick={closeMenu}>About</a>
+              <a href="#about" className="nav-link" onClick={closeMenu}>About</a>
             </li>
           </ul>
         </div>

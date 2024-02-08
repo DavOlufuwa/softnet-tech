@@ -5,14 +5,16 @@ import Correct from "/correct.svg";
 
 const Offerings = () => {
   return (
-    <div className="c-container mb-40">
+    <div className="c-container mb-40" id="about">
       <div className="flex flex-col-reverse py-12 mb-12 md:flex-row md:gap-10 items-center ">
         <img
           src={HeroImage}
           alt="an hero image showing a computer with a set of books and certificates"
           className="min-w-[350px] "
+          data-aos="fade-right"
+          data-aos-duration="800"
         />
-        <div>
+        <div data-aos="fade-left" data-aos-duration="800">
           <h2 className="text-4xl font-bold mb-4 md:mb-6 md:text-[2.35rem]  xl:text-5xl xl:leading-[60px]">
             We Provide Many <span className="text-btn">Features</span> You Can
             Use
@@ -33,8 +35,12 @@ const Offerings = () => {
           </p>
         </div>
       </div>
-      <div id="services" className="">
-        <h2 className="capitalize text-4xl text-center font-bold my-10">
+      <div id="services">
+        <h2
+          className="capitalize text-4xl text-center font-bold my-10"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+        >
           Services we provide
         </h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
@@ -42,13 +48,17 @@ const Offerings = () => {
             <div
               key={info.id}
               className="flex flex-col items-center gap-2 p-6 card-container outline outline-1 outline-blue-100 hover:outline-none duration-300"
+              data-aos="zoom-in-down"
+              data-aos-duration="800"
             >
               <div className="bg-bg-icon max-w-max p-3 rounded-full">
                 <img src={info.img} className="w-6" alt="card image" />
               </div>
               <div className="flex flex-col gap-3 items-center">
                 <h3 className="text-t-blue">{info.topic}</h3>
-                <p className="text-t-gray text-center text-sm">{info.content}</p>
+                <p className="text-t-gray text-center text-sm">
+                  {info.content}
+                </p>
               </div>
             </div>
           ))}

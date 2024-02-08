@@ -61,7 +61,7 @@ const Footer = () => {
           <p>
             Send Us a Message or
             <span className="text-t-blue font-semibold">
-              <a className="cursor-pointer"> Give us a call at 08104732823</a>
+              <a className="cursor-pointer" href="tel:08083213866"> Give us a call at 08083213866</a>
             </span>
           </p>
         </div>
