@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "topic": "Online Result Checker",
+    "content": "Swift grading & online checker for accurate assessments, cost-effectively enhancing educational efficiency.",
+    "img": ""
+  },
+  {
+    "id": 2,
+    "topic": "Computer Based Tests",
+    "content": "Computer-based assessments, providing secure, flexible testing at reduced costs for institutions.",
+    "img": ""
+  },
+  {
+    "id": 3,
+    "topic": "Electronic Library (E-Library)",
+    "content": "Digital library service providing affordable, secure and flexible access to vast collections of educational resources.",
+    "img": ""
+  },
+  {
+    "id": 4,
+    "topic": "Virtual Classrooms",
+    "content": "Online classroom feature, enabling remote learning affordably, securely and efficiently.",
+    "img": ""
+  },
+  {
+    "id": 5,  
+    "topic": "Coding Bootcamps",
+    "content": "Comprehensive coding curriculum, promoting digital literacy and coding skills at affordable costs.",
+    "img": ""
+  }
+]
