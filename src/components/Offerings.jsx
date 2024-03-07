@@ -1,14 +1,14 @@
-import HeroImage from "/hero-img.svg";
 import information from "../assets/data/information.json";
 import outline from "../assets/data/outlines.json";
 import Correct from "/correct.svg";
+import OfferingsImage from '/offerings.svg'
 
 const Offerings = () => {
   return (
     <div className="c-container mb-40" id="about">
       <div className="flex flex-col-reverse py-12 mb-12 md:flex-row md:gap-10 items-center ">
         <img
-          src={HeroImage}
+          src={OfferingsImage}
           alt="an hero image showing a computer with a set of books and certificates"
           className="min-w-[350px] "
           data-aos="fade-right"

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import HeroImage from "/hero-img.svg";
 
-
 const Hero = () => {
 
 

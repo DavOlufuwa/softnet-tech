@@ -1,29 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: "Roboto", sans-serif;
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
 
-  /* ::-webkit-scrollbar {
-    width: 0px;
+  html {
+    font-family: "Roslindale Display Condensed", sans-serif;
   }
-
-  ::-webkit-scrollbar-thumb {
-    background: rgba(136, 136, 136, 0.281);
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  } */
 
   .progress-bar {
     @apply fixed top-0 left-0 right-0 h-2 bg-btn origin-left z-50;
@@ -74,5 +65,23 @@
     @apply resize-y min-h-32;
   }
 
+  .slide-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    background: #0f0f0f;
+    transform-origin: bottom;
+  }
 
+  .slide-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    background: #0f0f0f;
+    transform-origin: top;
+  }
 }
