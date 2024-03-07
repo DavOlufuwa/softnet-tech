@@ -5,17 +5,18 @@ import AnimatedPages from "./pages/AnimatedPages";
 import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
-
   return (
-    <SnackbarProvider
-      maxSnack={1}
-      anchorOrigin={{ vertical: "top", horizontal: "center" }}
-    >
-      <Router>
-        <Sidebar />
-        <AnimatedPages />
-      </Router>
-    </SnackbarProvider>
+    <div className="py-24 px-12 lg:px-48">
+      <SnackbarProvider
+        maxSnack={1}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Router>
+          <Sidebar />
+          <AnimatedPages />
+        </Router>
+      </SnackbarProvider>
+    </div>
   );
 }
 

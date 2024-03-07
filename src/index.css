@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
   }
 
-  html {
+  html, body {
     font-family: "Roslindale Display Condensed", sans-serif;
   }
 
