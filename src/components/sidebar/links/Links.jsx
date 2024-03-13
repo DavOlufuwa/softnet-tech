@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const variants = {
   open: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.001,
     },
   },
   closed: {
     transition: {
-      staggerChildren: 0.05,
+      staggerChildren: 0.025,
       staggerDirection: -1,
     },
   },

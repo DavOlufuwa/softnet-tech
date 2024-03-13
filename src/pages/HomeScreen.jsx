@@ -25,7 +25,16 @@ const HomeScreen = () => {
         exit={{ y: "-100%", transition: { duration: 1.75 } }}
       >
         <m.div>
-          <h1>Grow Your Business With Innovative Ideas</h1>
+          <div className="p-1 overflow-hidden">
+            <m.h1
+              animate={{ y: 0 }}
+              initial={{ y: "100%" }}
+              transition={{ delay: 2, duration: 0.5}}
+              className="text-5xl"
+            >
+              Grow Your Business With Innovative Ideas
+            </m.h1>
+          </div>
           <h4>
             Let creators and innovators help you create tools that will ensure
             your business thrives.
@@ -36,7 +45,7 @@ const HomeScreen = () => {
           </div>
         </m.div>
         <m.div>
-          <img alt=""/>
+          <img alt="" />
         </m.div>
       </m.div>
     </>
