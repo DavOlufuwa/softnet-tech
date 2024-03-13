@@ -9,7 +9,7 @@ import { AnimatePresence } from "framer-motion";
 const AnimatedPages = () => {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence initial={false} mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route index element={<HomeScreen />} />
         <Route path="about" element={<About />} />

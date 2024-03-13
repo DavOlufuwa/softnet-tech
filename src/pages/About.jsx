@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <m.div
-        className="min-h-screen text-gray-900 absolute z-10 top-0 left-0 w-full h-full px:16 lg:px-48"
+        className="min-h-screen text-gray-900 absolute z-10 top-0 left-0 w-full h-full"
         initial={{ y: "100%" }}
         animate={{ y: "-100%" }}
         transition={{ duration: 2 }}
