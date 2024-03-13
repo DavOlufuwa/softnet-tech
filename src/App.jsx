@@ -7,7 +7,7 @@ import CircleLoader from "./components/loader/CircleLoader";
 
 function App() {
   return (
-    <div className="py-24 px-12 lg:px-48 bg-gray-900 min-h-[100dvh] relative overflow-y-hidden">
+    <div className="py-24 px-12 lg:px-48 bg-black min-h-[100dvh] relative overflow-y-hidden">
       <SnackbarProvider
         maxSnack={1}
         anchorOrigin={{ vertical: "top", horizontal: "center" }}

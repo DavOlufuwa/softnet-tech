@@ -1,5 +1,6 @@
 import { motion as m } from "framer-motion";
 import LoaderText from "../components/loader/loadertext/LoaderText";
+import AboutImage from "/about-us.webp";
 
 const About = () => {
   return (
@@ -8,13 +9,14 @@ const About = () => {
         className="min-h-screen text-gray-900 absolute z-10 top-0 left-0 w-full h-full"
         initial={{ y: "100%" }}
         animate={{ y: "-100%" }}
-        transition={{ duration: 3.5 }}
+        transition={{ duration: 3 , ease:"easeOut"}}
         exit={{ opacity: 0 }}
       >
         <LoaderText titleText="About Softnet" />
         <img
-          className=""
-          src="https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          className="w-full h-full object-cover brightness-[45%]"
+          loading="lazy"
+          src={AboutImage}
         />
       </m.div>
       <m.div
