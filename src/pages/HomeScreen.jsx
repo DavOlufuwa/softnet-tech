@@ -2,7 +2,7 @@ import { motion as m } from "framer-motion";
 import { Link } from "react-router-dom";
 import LoaderText from "../components/loader/loadertext/LoaderText";
 import HomeImage from "/home-screen-bg.webp";
-
+import HomeVideo from "/compressed-size.mp4";
 const HomeScreen = () => {
   return (
     <>
@@ -20,14 +20,18 @@ const HomeScreen = () => {
           src={HomeImage}
         />
       </m.div>
+      
+      <video autoPlay loop muted className="absolute z-2 top-0 left-0 min-w-full min-h-full">
+        <source src={HomeVideo} type="video/mp4"/>
+      </video>
       <m.div
-        className="bg-gray-950 absolute h-full  w-full z-3 top-0 left-0 bottom-0 right-0 text-white px-5 sm:px-16 lg:px-24"
+        className="bg-transparent absolute h-full  w-full z-3 top-0 left-0 bottom-0 right-0 text-white px-5 sm:px-16 lg:px-24"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.25, duration: 1 }}
         exit={{ y: "-100%", transition: { delay: 0.75, duration: 1.75 } }}
       >
-        <m.div className="mt-32">
+        <m.div className="mt-24">
           <div className="casing">
             <m.h2
               initial={{ y: "100%" }}
@@ -53,7 +57,7 @@ const HomeScreen = () => {
               and process.
             </m.h4>
           </div>
-          <div>
+          <div className="mt-6 flex items-center gap-4">
             <Link to={"features"} className="btn" data-content="Features">
               Features
             </Link>
