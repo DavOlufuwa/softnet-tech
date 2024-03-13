@@ -15,7 +15,7 @@ $time: 1;
 .arrow {
    width: 0; 
    height: 0;
-   margin: 0 (-$size / 2);
+   margin: 0 calc(-1 * $size / 2);
    border-left: $size solid transparent;
    border-right: $size solid transparent;
    border-bottom: ($size * 1.8) solid $color;
@@ -28,13 +28,13 @@ $time: 1;
    
    @for $i from 1 through 18 {
       &.outer-#{$i} {
-         animation-delay: -($time / 18) * $i + s;
+         animation-delay: - calc($time / 6) * $i + s;
       }  
    }
 
    @for $i from 1 through 6 {
       &.inner-#{$i} {
-         animation-delay: -($time / 6) * $i + s;
+         animation-delay: - calc($time / 6) * $i + s;
       }  
    }  
 }

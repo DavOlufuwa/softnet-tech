@@ -1,4 +1,5 @@
 import { motion as m } from "framer-motion";
+import LoaderText from "../components/loader/loadertext/LoaderText";
 
 const About = () => {
   return (
@@ -7,9 +8,10 @@ const About = () => {
         className="min-h-screen text-gray-900 absolute z-10 top-0 left-0 w-full h-full"
         initial={{ y: "100%" }}
         animate={{ y: "-100%" }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 3.5 }}
         exit={{ opacity: 0 }}
       >
+        <LoaderText titleText="About Softnet" />
         <img
           className=""
           src="https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -20,9 +22,9 @@ const About = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.25, duration: 1 }}
-        exit={{ y: "-100%", transition: { duration: 1.75 } }}
+        exit={{ y: "-100%", transition: { delay: 0.75, duration: 1.75 } }}
       >
-        <h1>About screen</h1>
+        <h2>About screen</h2>
         <p>
           Softnet School management software is a comprehensive solution
           designed to streamline and automate various administrative and

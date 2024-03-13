@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,7 +14,7 @@
 
   html,
   body {
-    font-family: "Roslindale Display Condensed", sans-serif;
+    font-family: "Saira", sans-serif;
   }
 
   .progress-bar {
@@ -66,34 +66,20 @@
     @apply resize-y min-h-32;
   }
 
-  .slide-in {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100svh;
-    background: #0f0f0f;
-    transform-origin: bottom;
-  }
-
-  .slide-out {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100svh;
-    background: #0f0f0f;
-    transform-origin: top;
-  }
-
-  .circleLoader::after {
-    content: "";
+  .title-text {
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    z-index: 1;
-    transform: scale(1.2);
+    text-transform: uppercase;
+    z-index: 12;
+    -webkit-text-stroke: 2px #f8f8f8ee;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(4rem + 4vw);
+    font-style: italic;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 2rem;
+    
   }
 }
