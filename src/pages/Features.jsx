@@ -22,7 +22,7 @@ const Features = () => {
         transition={{ delay: 1.25, duration: 1 }}
         exit={{ y: "-100%", transition: { duration: 1.75 } }}
       >
-        <h1>Features screen</h1>
+        <h1></h1>
         <p>
           Softnet School management software is a comprehensive solution
           designed to streamline and automate various administrative and
