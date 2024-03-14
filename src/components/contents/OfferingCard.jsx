@@ -1,9 +1,6 @@
-import { motion as m } from "framer-motion";
+import {motion as m} from 'react'
 
-
-const FeatureCard = ({ title, content }) => {
-
-
+const OfferingCard = ({imgLink, title, content}) => {
   return (
     <m.div
       className="py-4 px-4 bg-slate-800 rounded-lg transition-all hover:bg-gradient-to-r from-slate-900 to-green-800 hover:duration-200"
@@ -20,6 +17,6 @@ const FeatureCard = ({ title, content }) => {
       <div className="text-gray-300 font-light">{content}</div>
     </m.div>
   );
-};
+}
 
-export default FeatureCard;
+export default OfferingCard
