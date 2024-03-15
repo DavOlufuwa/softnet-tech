@@ -17,14 +17,6 @@
     font-family: "Saira", sans-serif;
   }
 
-  .progress-bar {
-    @apply fixed top-0 left-0 right-0 h-2 bg-btn origin-left z-50;
-  }
-
-  .nav-link {
-    @apply font-medium text-gray-500 text-lg cursor-pointer duration-200  hover:text-btn;
-  }
-
   .c-container {
     @apply min-h-[100svh] px-6 md:min-h-[90svh] lg:px-32 xl:px-40;
   }
@@ -77,22 +69,21 @@
     @apply flex items-center w-40 font-semibold hover:text-green-500 transition-all duration-200;
   }
 
-  .btn-2 svg{
-    @apply transition-all duration-300 ease-in-out
+  .btn-2 svg {
+    @apply transition-all duration-300 ease-in-out;
   }
 
   .btn-2:hover svg {
-    @apply rotate-90  ;
+    @apply rotate-90;
+  }
+  .preloader {
+    background: linear-gradient(180deg, rgb(8, 8, 8), #1e8044, #1aa04b);
   }
 
   .title-text {
-    position: absolute;
     text-transform: uppercase;
-    z-index: 12;
-    -webkit-text-stroke: 2px #f8f8f8ee;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white;
     font-size: calc(3.5rem + 4vw);
-    font-style: italic;
     font-weight: 900;
     position: absolute;
     top: 50%;
@@ -100,5 +91,15 @@
     transform: translate(-50%, -50%);
     padding: 0 2rem;
     letter-spacing: 3px;
+  }
+
+  .svg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 200px);
+  }
+  .svg > path {
+    fill: #1aa04b;
   }
 }

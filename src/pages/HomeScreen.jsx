@@ -1,26 +1,12 @@
 import { motion as m } from "framer-motion";
 import { Link } from "react-router-dom";
-import LoaderText from "../components/loader/loadertext/LoaderText";
-import HomeImage from "/home-screen-bg.webp";
 import HeroImage from "/hero-image.webp";
 import Magnetic from "../components/magnetic/Magnetic";
+import Preloader from "../components/preloader/Preloader";
 const HomeScreen = () => {
   return (
     <>
-      <m.div
-        className="min-h-screen absolute z-10 top-0 left-0 w-full h-full"
-        initial={{ y: "100%" }}
-        animate={{ y: "-100%" }}
-        transition={{ duration: 3.5 }}
-        exit={{ opacity: 0 }}
-      >
-        <LoaderText titleText="Softnet Tech" />
-        <img
-          className="object-cover brightness-[45%]"
-          loading="lazy"
-          src={HomeImage}
-        />
-      </m.div>
+      <Preloader loaderText={"Softnet Tech"}/>
       <m.div
         className="lg:flex lg:gap-16 lg:items-center bg-gray-900 absolute h-full w-full z-3 top-0 left-0 bottom-0 right-0 text-white px-5 sm:px-16 "
         initial={{ opacity: 0 }}

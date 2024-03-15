@@ -31,7 +31,7 @@ const Sidebar = () => {
       className="flex flex-col items-center justify-center bg-red-300 text-black"
       animate={open ? "open" : "closed"}
     >
-      <motion.div className="z-[99] fixed top-0 left-0 bottom-0 w-full bg-slate-100 sm:w-96" variants={variants}>
+      <motion.div className="z-[90] fixed top-0 left-0 bottom-0 w-full bg-slate-100 sm:w-96" variants={variants}>
         <Links setOpen={setOpen} />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
