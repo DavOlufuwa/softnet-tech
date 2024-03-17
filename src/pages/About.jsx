@@ -40,7 +40,7 @@ const About = () => {
           </div>
         </div>
         <m.div
-          className="bg-red-200 md:min-w-[50%] md:h-full"
+          className="md:min-w-[50%] md:h-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 4.75, duration: 0.75 }}

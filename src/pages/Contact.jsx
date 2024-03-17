@@ -1,6 +1,6 @@
 import { motion as m } from "framer-motion";
 import Preloader from "../components/preloader/Preloader";
-import AboutImage from "/about-us.webp";
+import ContactImage from "/contactus.webp";
 import Magnetic from "../components/magnetic/Magnetic";
 
 const Contact = () => {
@@ -25,8 +25,13 @@ const Contact = () => {
               Contact Us
             </m.h2>
           </div>
-          <div className="casing mt-4 ">
-            <form className="flex flex-col gap-2">
+          <div className="casing mt-4">
+            <m.form
+              className="flex flex-col gap-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 4.75, duration: 0.75 }}
+            >
               <div className="form-container">
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name" autoComplete="off" />
@@ -54,7 +59,7 @@ const Contact = () => {
                   </button>
                 </Magnetic>
               </div>
-            </form>
+            </m.form>
           </div>
         </div>
         <m.div
@@ -64,8 +69,8 @@ const Contact = () => {
           transition={{ delay: 4.75, duration: 0.75 }}
         >
           <img
-            src={AboutImage}
-            alt="images of people using a computer"
+            src={ContactImage}
+            alt="image of a computer"
             className="object-cover brightness-75"
           />
         </m.div>

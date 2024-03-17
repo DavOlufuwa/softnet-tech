@@ -29,19 +29,13 @@
     transition: 0.3s ease-in-out;
     box-shadow: 0 4px 6px 4px rgb(243, 248, 254);
   }
-  .button-filled {
-    @apply text-sm font-medium bg-btn text-white py-3.5 px-6 rounded-full cursor-pointer duration-200 hover:bg-white hover:text-btn hover:ring-2 hover:ring-inset hover:ring-btn;
-  }
-
-  .button-outlined {
-    @apply text-sm font-medium bg-none border-white border-2 text-white py-3.5 px-6 rounded-full cursor-pointer duration-200  hover:bg-btn hover:border-btn;
-  }
 
   .form-container {
     @apply flex flex-col gap-1;
   }
+  
   .form-container label {
-    @apply font-light text-bg-icon text-[17px];
+    @apply font-medium text-green-500 text-[17px];
   }
 
   .form-container input,
@@ -76,7 +70,6 @@
   .btn-2:hover svg {
     @apply rotate-90;
   }
-
 
   .title-text {
     text-transform: uppercase;
