@@ -41,12 +41,12 @@
     @apply flex flex-col gap-1;
   }
   .form-container label {
-    @apply font-medium text-bg-icon text-[17px];
+    @apply font-light text-bg-icon text-[17px];
   }
 
   .form-container input,
   textarea {
-    @apply border bg-gray-200 border-bg-blues py-2 px-3 duration-300 focus:border-none focus:outline-1 focus:outline-bg-icon rounded-sm;
+    @apply border bg-transparent border-gray-500 py-2 px-3 duration-300 focus:outline-none focus:outline-1 focus:outline-green-500 rounded-sm;
   }
 
   input::placeholder,

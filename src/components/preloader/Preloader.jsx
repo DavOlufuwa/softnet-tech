@@ -36,9 +36,8 @@ const Preloader = ({ loaderText }) => {
 
   return (
     <m.div
-      className="h-screen w-full absolute z-[10] grid place-content-center top-[-100dvh] left-0 preloader"
+      className="h-screen w-full absolute z-[10] grid place-content-center left-0 preloader"
       ref={scope}
-      exit={{opacity: 0}}
     >
       {dimension.width > 0 && (
         <>
