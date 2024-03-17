@@ -26,7 +26,7 @@ const Preloader = ({ loaderText }) => {
         {
           top: ["-100vh", "0vh", "-100vh"],
         },
-        { duration: 5 },
+        { duration: 4 },
         { ease: [0.76, 0, 0.24, 1] },
       )
     };
