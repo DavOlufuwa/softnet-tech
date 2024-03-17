@@ -6,7 +6,7 @@ const ToggleButton = ({ setOpen }) => {
       className="cursor-pointer z-[90] fixed w-[50px] h-[50px] rounded-full top-[24px] left-[39px] bg-transparent border-none"
       onClick={() => setOpen((prev) => !prev)}
     >
-      <svg width="23" height="23" viewBox="0 0 23 16">
+      <svg width="24" height="32" viewBox="0 0 23 16">
         <motion.path
           strokeWidth="3"
           stroke="black"
