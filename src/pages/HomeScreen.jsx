@@ -6,20 +6,20 @@ import Preloader from "../components/preloader/Preloader";
 const HomeScreen = () => {
   return (
     <>
-      <Preloader loaderText={"Softnet Tech"}/>
+      <Preloader loaderText={"Softnet Tech"} />
       <m.div
-        className="lg:flex lg:gap-16 lg:items-center bg-gray-900 absolute h-full w-full z-3 top-0 left-0 bottom-0 right-0 text-white px-5 sm:px-16 "
+        className="lg:flex lg:gap-16 lg:items-center bg-gray-900 absolute overflow-y-hidden h-full w-full z-3 top-0 left-0 bottom-0 right-0 text-white px-5 sm:px-16 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.25, duration: 1 }}
-        exit={{ y: "-100%", transition: { delay: 0.75, duration: 1.75 } }}
+        transition={{ duration: 1 }}
+        exit={{ opacity: 0, transition: { delay: 0.75 } }}
       >
         <m.div className="mt-24 sm:mt-32 lg:mt-0">
           <div className="casing">
             <m.h2
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
-              transition={{ delay: 2.75, duration: 0.75 }}
+              transition={{ delay: 4.75, duration: 0.75 }}
               className="text-6xl font-bold md:text-6xl lg:leading-tight"
             >
               Grow Your Business With Innovative Ideas
@@ -30,7 +30,7 @@ const HomeScreen = () => {
             <m.h4
               initial={{ y: "-100%" }}
               animate={{ y: 0 }}
-              transition={{ delay: 2.75, duration: 0.75 }}
+              transition={{ delay: 4.75, duration: 0.75 }}
               className="font-normal tracking-wide leading-8"
             >
               Softnet School management software is a comprehensive solution
@@ -44,7 +44,7 @@ const HomeScreen = () => {
             className="mt-6 flex items-center px-1 gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 3, duration: 1 }}
+            transition={{ delay: 4.5, duration: 1 }}
           >
             <Magnetic>
               <Link to={"features"} className="btn" data-content="Features">
@@ -81,7 +81,7 @@ const HomeScreen = () => {
             className="rounded-full"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 3, duration: 1 }}
+            transition={{ delay: 4.75, duration: 1 }}
             exit={{ opacity: 0 }}
           />
         </m.div>

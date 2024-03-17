@@ -76,9 +76,7 @@
   .btn-2:hover svg {
     @apply rotate-90;
   }
-  .preloader {
-    background: linear-gradient(180deg, rgb(8, 8, 8), #1e8044, #1aa04b);
-  }
+
 
   .title-text {
     text-transform: uppercase;

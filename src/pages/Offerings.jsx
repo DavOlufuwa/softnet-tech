@@ -1,22 +1,12 @@
 import { motion as m } from "framer-motion";
 import OfferingCard from "../components/contents/OfferingCard";
 import { offerlist } from "../components/contents/offerlist";
+import Preloader from "../components/preloader/Preloader";
 
 const Offerings = () => {
   return (
     <>
-      <m.div
-        className="min-h-screen text-gray-900 absolute z-10 top-0 left-0 w-full h-full"
-        initial={{ y: "100%" }}
-        animate={{ y: "-100%" }}
-        transition={{ duration: 2 }}
-        exit={{ opacity: 0 }}
-      >
-        <img
-          className=""
-          src="https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        />
-      </m.div>
+      <Preloader loaderText="Our Services"/>
       <div>
         <m.div
           className="bg-gray-900 text-white absolute h-max w-full z-3 top-0 left-0 bottom-0 right-0 px-5 pb-12 sm:px-16"

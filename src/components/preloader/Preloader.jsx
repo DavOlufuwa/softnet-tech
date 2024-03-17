@@ -1,4 +1,4 @@
-import { motion as m } from "framer-motion";
+import { motion as m, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Preloader = ({ loaderText }) => {
@@ -17,18 +17,28 @@ const Preloader = ({ loaderText }) => {
     dimension.height
   } Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`;
 
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    const animation = async () => {
+      await animate(
+        scope.current,
+        {
+          top: ["-100vh", "0vh", "-100vh"],
+        },
+        { duration: 5 },
+        { ease: [0.76, 0, 0.24, 1] },
+      )
+    };
+
+    animation();
+  });
+
   return (
     <m.div
-      className="h-screen w-full absolute z-[10] grid place-content-center top-0 left-0 preloader"
-      initial={{ top: "-100dvh" }}
-      animate={{
-        top: "0vh",
-        opacity: "0"
-      }}
-      transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
-      exit={{
-        top: "-100vh"
-      }}
+      className="h-screen w-full absolute z-[10] grid place-content-center top-[-100dvh] left-0 preloader"
+      ref={scope}
+      exit={{opacity: 0}}
     >
       {dimension.width > 0 && (
         <>
@@ -39,17 +49,16 @@ const Preloader = ({ loaderText }) => {
             <m.path
               initial={{
                 d: initialPath,
-                transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
+                transition: { duration: 1, ease: [0.76, 0, 0.24, 2] },
               }}
               animate={{
                 d: targetPath,
                 transition: {
-                  duration: 0.7,
-                  ease: [0.76, 0, 0.24, 1],
+                  duration: 4,
+                  ease: [0.76, 0, 0.24, 2],
                   delay: 0.3,
                 },
               }}
-              exit={{ opacity: 0 }}
             ></m.path>
           </svg>
         </>
