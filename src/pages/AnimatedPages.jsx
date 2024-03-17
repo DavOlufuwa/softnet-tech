@@ -6,6 +6,7 @@ import Features from "./Features";
 import Offerings from "./Offerings";
 import { AnimatePresence } from "framer-motion";
 
+
 const AnimatedPages = () => {
   const location = useLocation();
   return (

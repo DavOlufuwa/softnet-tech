@@ -82,7 +82,6 @@ const HomeScreen = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 4.75, duration: 1 }}
-            exit={{ opacity: 0 }}
           />
         </m.div>
       </m.div>
