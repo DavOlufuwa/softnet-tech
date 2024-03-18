@@ -44,7 +44,7 @@ const Preloader = ({ loaderText }) => {
           <h2 className="font-bold text-center text-5xl md:text-6xl lg:text-7xl z-[1] xl:text-8xl title-text">
             {loaderText}
           </h2>
-          <svg className="svg">
+          <m.svg className="svg" animate={{top: 0 }}>
             <m.path
               initial={{
                 d: initialPath,
@@ -59,7 +59,7 @@ const Preloader = ({ loaderText }) => {
                 },
               }}
             ></m.path>
-          </svg>
+          </m.svg>
         </>
       )}
     </m.div>

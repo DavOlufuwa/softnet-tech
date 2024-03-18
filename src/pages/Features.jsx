@@ -6,7 +6,7 @@ import Preloader from "../components/preloader/Preloader";
 const Features = () => {
   return (
     <>
-      <Preloader loaderText="Features" />
+      <Preloader loaderText="Our Features" />
       <div>
         <m.div
           className="bg-gray-900 text-white absolute h-max w-full z-3 top-0 left-0 bottom-0 right-0 px-5 pb-12 sm:px-16"

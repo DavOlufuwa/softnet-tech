@@ -86,7 +86,7 @@
 
   .svg {
     position: absolute;
-    top: 0;
+    top: -200px;
     width: 100%;
     height: calc(100% + 200px);
   }

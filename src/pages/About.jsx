@@ -18,7 +18,7 @@ const About = () => {
             <m.h2
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
-              transition={{ delay: 4.75, duration: 0.75 }}
+              transition={{ delay: 2.75, duration: 0.75 }}
               className="text-6xl font-bold md:text-6xl lg:leading-tight sm:mt-20"
             >
               About Us
@@ -29,7 +29,7 @@ const About = () => {
               className="leading-7 font-normal md:text-[15px] md:tracking-wider"
               initial={{ y: "-100%" }}
               animate={{ y: 0 }}
-              transition={{ delay: 4.75, duration: 0.75 }}
+              transition={{ delay: 2.75, duration: 0.75 }}
             >
               Softnet School management software is a comprehensive solution
               designed to streamline and automate various administrative and
@@ -43,7 +43,7 @@ const About = () => {
           className="md:min-w-[50%] md:h-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 4.75, duration: 0.75 }}
+          transition={{ delay: 2.75, duration: 0.75 }}
         >
           <img
             src={AboutImage}

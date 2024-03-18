@@ -19,7 +19,7 @@ const HomeScreen = () => {
             <m.h2
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
-              transition={{ delay: 4.75, duration: 0.75 }}
+              transition={{ delay: 2.75, duration: 0.75 }}
               className="text-6xl font-bold md:text-6xl lg:leading-tight"
             >
               Grow Your Business With Innovative Ideas
@@ -30,7 +30,7 @@ const HomeScreen = () => {
             <m.h4
               initial={{ y: "-100%" }}
               animate={{ y: 0 }}
-              transition={{ delay: 4.75, duration: 0.75 }}
+              transition={{ delay: 2.75, duration: 0.75 }}
               className="font-normal tracking-wide leading-8"
             >
               Softnet School management software is a comprehensive solution
@@ -44,7 +44,7 @@ const HomeScreen = () => {
             className="mt-6 flex items-center px-1 gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 4.5, duration: 1 }}
+            transition={{ delay: 2.75, duration: 1 }}
           >
             <Magnetic>
               <Link to={"features"} className="btn" data-content="Features">
@@ -81,7 +81,7 @@ const HomeScreen = () => {
             className="rounded-full"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 4.75, duration: 1 }}
+            transition={{ delay: 2.75, duration: 1 }}
           />
         </m.div>
       </m.div>

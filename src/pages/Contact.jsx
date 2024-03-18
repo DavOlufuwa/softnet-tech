@@ -19,7 +19,7 @@ const Contact = () => {
             <m.h2
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
-              transition={{ delay: 4.75, duration: 0.75 }}
+              transition={{ delay: 2.75, duration: 0.75 }}
               className="text-6xl font-bold md:text-6xl lg:leading-tight sm:mt-20"
             >
               Contact Us
@@ -30,7 +30,7 @@ const Contact = () => {
               className="flex flex-col gap-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 4.75, duration: 0.75 }}
+              transition={{ delay: 2.75, duration: 0.75 }}
             >
               <div className="form-container">
                 <label htmlFor="name">Name</label>
@@ -66,7 +66,7 @@ const Contact = () => {
           className="hidden md:block md:h-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 4.75, duration: 0.75 }}
+          transition={{ delay: 2.75, duration: 0.75 }}
         >
           <img
             src={ContactImage}
